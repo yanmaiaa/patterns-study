@@ -1,0 +1,17 @@
+package com.ydmaia.creational;
+
+public class ChessBoard {
+	
+	//Aplicação de primeiro pattern, chamado de Singleton:
+	private ChessBoard instance = new ChessBoard(); //Instância única
+	
+	private ChessBoard() {
+		//construtor privado para permitir que essa classe tenha uma instância única
+		//e com isso, nem as subclasses pdoerão instanciá-la
+	}
+	
+	//Criamos um método para ser uma forma de acessarmos a instância única em outras classes
+	ChessBoard getInstance() {
+		return instance;
+	}
+}

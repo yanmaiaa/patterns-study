@@ -1,0 +1,8 @@
+package com.ydmaia.creational;
+
+public class ChessBoard {
+	
+	//Aplicação de primeiro pattern, chamado de Singleton:
+	private ChessBoard instance = new ChessBoard(); //Instância única
+
+}
